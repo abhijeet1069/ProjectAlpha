@@ -1,8 +1,7 @@
-package choobTutorial;
+package experiment.choobTutorial;
 
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
-import javax.swing.*;
 import javax.swing.*;
 
 public class DrawingCanvas extends JComponent {

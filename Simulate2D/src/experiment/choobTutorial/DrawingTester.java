@@ -1,4 +1,4 @@
-package choobTutorial;
+package experiment.choobTutorial;
 
 import javax.swing.*;
 
