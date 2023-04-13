@@ -11,8 +11,8 @@ import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 
 public class Display extends Canvas implements Runnable{
-    public static final int WIDTH = 800;
-    public static final int HEIGHT = 600;
+    public static final int WIDTH = 1280;
+    public static final int HEIGHT = 720;
     public static final String TITLE = "MineFront Pre-Alpha 0.02";
 
     private Thread thread; //only Display can use this private thread
