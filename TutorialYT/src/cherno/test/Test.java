@@ -1,31 +1,22 @@
 package cherno.test;
 
-public class Test implements Runnable{
+import java.awt.Canvas;
+import java.awt.image.BufferStrategy;
 
-	String message;
+public class Test extends Canvas{
 	
-	Test(String message){
-		this.message = message;
-	}
-	public void print(String message) {
-		for(int i = 0; i < 100; i++) {
-			System.out.println(message);
+	public void render() {
+		BufferStrategy bs = this.getBufferStrategy();
+		if(bs == null) {
+			createBufferStrategy(3);
+			return;
 		}
+		//screen.render();
 		
 	}
 	
-	@Override
-	public void run() {
-		print(this.message);
-	}
-	
 	public static void main(String[] args) throws InterruptedException {
-		Test test1 = new Test("Hello Thread1");
-		Thread thread1 = new Thread(test1);
-		thread1.start();
-		thread1.join();
-		Test test2 = new Test("Hello Thread2");
-		Thread thread2 = new Thread(test2);
-		thread2.start();
+		
+		
 	}
 }
