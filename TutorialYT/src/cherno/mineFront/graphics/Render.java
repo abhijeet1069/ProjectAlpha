@@ -1,7 +1,5 @@
 package cherno.mineFront.graphics;
 
-import cherno.mineFront.Display;
-
 public class Render {
 	public final int width;
 	public final int height;

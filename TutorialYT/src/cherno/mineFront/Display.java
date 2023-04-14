@@ -71,6 +71,7 @@ public class Display extends Canvas implements Runnable{
     		unprocessedSeconds += passedTime/1_000_000_000.0;
     		
     		while(unprocessedSeconds > secondsPerTick) {
+    			tick();
     			unprocessedSeconds -= secondsPerTick;
     			tickCount++;
     			if(tickCount%60 == 0) {
