@@ -2,14 +2,24 @@
 let x = 100;
 let y = 100;
 
-let xspeed = 2.5;
-let yspeed = 2;
+let xspeed = 0;
+let yspeed = 1;
 let radius = 48;
 
+function setVelocity(){
+
+    var Vx = document.getElementById("vx").value;
+    var Vy = document.getElementById("vy").value;
+
+    xspeed = parseInt(Vx);
+    yspeed = parseInt(Vy);
+
+    console.log("xspeed = "+xspeed);
+    console.log("yspeed = "+yspeed);
+}
+
 function setup(){
-    var width = 800;
-    var height = 600;
-    createCanvas(width,height);
+    createCanvas(800, 600);
 }
 
 function draw(){
