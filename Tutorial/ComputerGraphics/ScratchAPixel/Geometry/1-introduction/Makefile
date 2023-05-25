@@ -1,9 +1,9 @@
 APP_NAME = myApp
 BUILD_DIR = ./bin
-CPP_FILES = ./src/*.cpp
+CPP_FILES = ./src/hello.cpp
 
 APP_DEFINES:=
-APP_INCLUDES:=
+APP_INCLUDES:=-std=c++11
 APP_LINKERS:=
 
 all: build run
