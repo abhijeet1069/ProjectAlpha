@@ -3,7 +3,7 @@ BUILD_DIR = ./bin
 CPP_FILES = ./src/myGeometry.cpp
 
 APP_DEFINES:=
-APP_INCLUDES:=-std=c++11
+APP_INCLUDES:= -std=c++11
 APP_LINKERS:=
 
 all: build run

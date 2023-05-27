@@ -438,7 +438,7 @@ int main(int argc, char **argv)
     std::cerr << v << std::endl;
     Matrix44f a, b, c;
     c = a * b;
-
+    Vec3f s = v.crossProduct(v);
     Matrix44f d(0.707107, 0, -0.707107, 0, -0.331295, 0.883452, -0.331295, 0, 0.624695, 0.468521, 0.624695, 0, 4.000574, 3.00043, 4.000574, 1);
     std::cerr << d << std::endl;
     d.invert();
