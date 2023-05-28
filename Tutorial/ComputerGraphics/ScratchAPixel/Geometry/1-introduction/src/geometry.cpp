@@ -434,15 +434,9 @@ typedef Matrix44<float> Matrix44f;
 //[/comment]
 int main(int argc, char **argv)
 {
-    Vec3f v(0, 1, 2);
-    std::cerr << v << std::endl;
-    Matrix44f a, b, c;
-    c = a * b;
-    Vec3f s = v.crossProduct(v);
-    Matrix44f d(0.707107, 0, -0.707107, 0, -0.331295, 0.883452, -0.331295, 0, 0.624695, 0.468521, 0.624695, 0, 4.000574, 3.00043, 4.000574, 1);
-    std::cerr << d << std::endl;
-    d.invert();
-    std::cerr << d << std::endl;
+    Vec3f v1(0, 1, 2);
+    Vec3f v2 = v1.crossProduct(v1);
+    std::cout<<v2<<std::endl;
 
     return 0;
 }

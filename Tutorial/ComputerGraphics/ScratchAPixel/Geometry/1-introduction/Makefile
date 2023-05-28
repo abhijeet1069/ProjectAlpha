@@ -1,6 +1,6 @@
 APP_NAME = myApp
 BUILD_DIR = ./bin
-CPP_FILES = ./src/myGeometry.cpp
+CPP_FILES = ./src/geometry.cpp
 
 APP_DEFINES:=
 APP_INCLUDES:= -std=c++11
