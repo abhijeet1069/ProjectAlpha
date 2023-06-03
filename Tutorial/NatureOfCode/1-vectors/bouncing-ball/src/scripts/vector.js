@@ -4,3 +4,9 @@ class Vector2D {
         this.y = y;
     }
 }
+
+class Player{
+    constructor(vector,name){
+        this.vector.x = 
+    }
+}s
