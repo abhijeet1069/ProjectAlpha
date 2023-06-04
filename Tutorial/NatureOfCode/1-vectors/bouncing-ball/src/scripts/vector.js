@@ -9,4 +9,4 @@ class Player{
     constructor(vector,name){
         this.vector.x = 
     }
-}s
+}
