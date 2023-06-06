@@ -1,4 +1,4 @@
-class Vector3D {
+export default class Vector3D {
     constructor(x, y, z) {
         this.x = x || 0;
         this.y = y || 0;
@@ -119,5 +119,3 @@ class Vector3D {
         return a.angleTo(b);
     }
 }
-
-module.exports = Vector3D;
