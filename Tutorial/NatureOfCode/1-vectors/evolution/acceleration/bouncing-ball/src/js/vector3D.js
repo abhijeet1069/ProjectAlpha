@@ -5,6 +5,10 @@ export default class Vector3D { //dafault will let us import with using {}
         this.z = z || 0;
     }
 
+    negative() {
+        return new Vector3D(-this.x, -this.y, -this.z);
+    }
+
     add(v) {
         if (v instanceof Vector3D) {
             return new Vector3D(this.x + v.x, this.y + v.y, this.z + v.z);
