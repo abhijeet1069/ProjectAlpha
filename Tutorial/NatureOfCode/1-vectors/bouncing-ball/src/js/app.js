@@ -82,7 +82,7 @@ function main(){
 
 function draw(){
     ctx.clearRect(0,0,canvas.width,canvas.height); //background(255);
-    let wind = new Vector3D(0.01,0);
+    let wind = new Vector3D(0.1,0.1);
     let gravity = new Vector3D(0,0.1*mover1.mass); //gravitational force depends of object's mass
     mover1.applyForce(wind);
     mover1.applyForce(gravity);
