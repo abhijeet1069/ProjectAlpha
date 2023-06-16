@@ -37,11 +37,11 @@ export default class Vector3D { //dafault will let us import with using {}
         );
     }
 
-    magnitude() {
+    length() {
         return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
     }
 
-    normalize() {
+    unit() {
         const len = this.length();
         return new Vector3D(this.x / len, this.y / len, this.z / len);
     }
